@@ -25,7 +25,7 @@ checkbox.addEventListener("change", (e) => {
 // Update permanent address parallely with changes made in current address if checkbox is checked.
 currentAddress.addEventListener("input", (e) => {
     if (checkbox.checked) {
-        let index = currentInputs.findIndex((currInput) => currInput === input);
+        let index = currentInputs.findIndex((currInput) => currInput === e.target);
         permanentInputs[index].value = e.target.value;
     }
 })
@@ -43,6 +43,9 @@ form.addEventListener("submit", (e) => {
             return;
         }
     }
+
+    alert("Form submitted!");
+    form.submit();
 })
 
 

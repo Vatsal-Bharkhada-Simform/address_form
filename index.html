@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main>
+        <form action="#">
+            <fieldset name="currentAddress">
+                <h3>Current Address</h3>
+                <input type="text" name="address1" placeholder="House / Flat number" required>
+                <input type="text" name="street" placeholder="Street" required>
+                <input type="text" name="locality" placeholder="Locality / Area" required>
+                <input type="text" name="city" placeholder="City" required>
+                <input type="text" name="state" placeholder="State" required>
+                <input type="number" name="pincode" placeholder="Pincode" required>
+            </fieldset>
+            <fieldset name="permanentAddress">
+                <h3>Permanent Address</h3>
+                <div>
+                    <input type="checkbox" name="sameAddress" id="sameAddress">
+                    <label for="sameAddress">Same as current address</label>
+                </div>
+                <input type="text" name="address1" placeholder="House / Flat number" required>
+                <input type="text" name="street" placeholder="Street" required>
+                <input type="text" name="locality" placeholder="Locality / Area" required>
+                <input type="text" name="city" placeholder="City" required>
+                <input type="text" name="state" placeholder="State" required>
+                <input type="number" name="pincode" placeholder="Pincode" required>
+            </fieldset>
+
+            <fieldset>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </main>
+
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
